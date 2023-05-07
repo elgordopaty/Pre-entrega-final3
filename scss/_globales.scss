@@ -1,0 +1,59 @@
+// ETIQUETAS GENERALES
+body{
+    font-family: $fuente-principal;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+footer{
+    margin-top: $espacio-grande;
+    @include flex-columna
+}
+    .container-redes a{
+        color: $color-secundario;
+        width: $icono-chico;
+    }
+
+
+.container-redes a{
+    color: $color-secundario;
+    width: $icono-chico;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    border-radius: 10px;
+}
+// HEADER
+.nav-link,
+.navbar-nav .nav-link.active{
+    color: $color-secundario;
+        &:hover{
+            color: $color-terciario;
+        }
+}
+.navbar-brand{
+    color: $color-secundario;
+}
+.navbar-toggler{
+    background-color: $color-secundario;
+    &:hover{
+        color: $color-secundario;
+    }
+}
+
+.container-fluid{
+    color: $color-secundario;
+        
+}
+
+// TEXTOS
+h1, h2, h3, h4{
+    text-align: center;
+    margin-top: $espacio-chico;
+}
+
+

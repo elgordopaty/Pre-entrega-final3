@@ -1,0 +1,39 @@
+.card-presupuesto{
+    color: $color-secundario;
+    background-color: darksalmon;
+    padding: 8px 
+}
+
+.lista-productos{
+    gap: 20px;
+    list-style: none;
+    @include flex-columna
+}
+// Altura imagenes carrusel
+.carousel-item img{
+    height: 600px;
+}
+
+// MEDIAQUERIS PRODUCTOS
+@media (min-width: $tablet){
+    .carousel-item img{
+        height: 90vh;
+    }
+
+.lista-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-algunos{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+       justify-content: start
+    }
+}
+
+@media (min-width: $desktop){
+    .carousel-item{
+        height: 95vh;
+    }
+}

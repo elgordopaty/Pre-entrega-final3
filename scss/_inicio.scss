@@ -1,0 +1,18 @@
+.grid-algunos{
+    gap: 30px;
+    @include flex-columna
+}
+
+@media (min-width: $tablet){
+    .grid-algunos{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+       justify-content: start
+    }
+}
+
+.iconos-index{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
