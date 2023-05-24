@@ -20,10 +20,6 @@ footer{
     }
 }
 
-.servicios{
-    @extend .container-cards
-}
-
 .container-redes{   
     @include flex-fila-centrado
 }

@@ -69,7 +69,7 @@ h1, h2, h3, h4 {
   margin-top: 20px;
 }
 
-.container-cards, .servicios {
+.container-cards {
   gap: 20px;
   width: 100%;
   display: flex;
@@ -88,11 +88,7 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 890px) {
-  .lista-productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .container-cards, .servicios {
+  .container-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -124,8 +120,12 @@ h1, h2, h3, h4 {
   }
 }
 .servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

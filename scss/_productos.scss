@@ -15,10 +15,6 @@
 }
 // MEDIAQUERIS PRODUCTOS
 @media (min-width: $tablet){
-.lista-productos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 
 .container-cards{
     display: grid;
