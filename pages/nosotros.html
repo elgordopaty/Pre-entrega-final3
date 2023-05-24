@@ -59,39 +59,50 @@
 
     </h4>
 <h2>Preguntas Frecuentes</h2>
-  <div class="row">
-  <div class="col-4">
-    <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">El pago es por adelantado?</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Tienen garantia los productos?</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">Realizan envios?</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">Estos envios, son gratis?</a>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        El pago es por adelantado?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Si, el pago es por adelantado debido a un tema de gastos administrativos como costos de los productos.</div>
     </div>
   </div>
-  <div class="col-8">
-    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-      <h4 id="list-item-1">Pago</h4>
-      <p>Si, el pago es por adelantado debido a un tema de gastos administrativos como costos de los productos.</p>
-      <h4 id="list-item-2">Garantia</h4>
-      <p>Si, cuentan con garantia de hasta 60 dias, solo con factura y caja en la que se lo entrego.</p>
-      <h4 id="list-item-3">Envios?</h4>
-      <p>Si, realizamos envios a todo el pais.</p>
-      <h4 id="list-item-4">Costos de envio</h4>
-      <p>Solo si la compra supera los $10.000, Sera envio gratis, de lo contrario el envio estara a cargo del comprador</p>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Tienen garantia los productos?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Si, cuentan con garantia de hasta 60 dias, solo con factura y caja en la que se lo entrego.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Realizan envios? Estos envios, son gratis?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Si, realizamos envios a todo el pais. Solo si la compra supera los $10.000, Sera envio gratis, de lo contrario el envio estara a cargo del comprador</div>
     </div>
   </div>
 </div>
-
-
+  
 
 
     <footer id="footer">
       <h3>Nuestras Redes Sociales</h3>
-      <a href="">
-        <span class="iconify" data-icon="mdi:instagram" style="color: white;" data-width="100"></span>
-      </a>
-      <a href=""><span class="iconify" data-icon="mdi:twitter" style="color: white;" data-width="100"></span>
-      </a>
+        <div class="container-redes">
+          <a href="">
+            <span class="iconify" data-icon="mdi:instagram" style="color: white;" data-width="100"></span>
+          </a>
+          <a href=""><span class="iconify" data-icon="mdi:twitter" style="color: white;" data-width="100"></span>
+              </a>
+       </div>
   </footer>
 </body>
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>

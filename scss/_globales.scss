@@ -7,19 +7,26 @@ body{
 
 footer{
     margin-top: $espacio-grande;
-    @include flex-columna
+    
 }
-    .container-redes a{
-        color: $color-secundario;
-        width: $icono-chico;
+// // CARRUSEL ALTURA
+.carousel-item img{
+    height: 40vh;
+}
+
+@media(min-width:$tablet){
+    .carousel-item img{
+        height: 90vh;
     }
-
-
-.container-redes a{
-    color: $color-secundario;
-    width: $icono-chico;
 }
 
+.servicios{
+    @extend .container-cards
+}
+
+.container-redes{   
+    @include flex-fila-centrado
+}
 ul{
     list-style: none;
 }

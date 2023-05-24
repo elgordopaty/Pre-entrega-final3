@@ -12,6 +12,26 @@ body {
   color: #FFF;
 }
 
+footer {
+  margin-top: 60px;
+}
+
+.carousel-item img {
+  height: 40vh;
+}
+
+@media (min-width: 890px) {
+  .carousel-item img {
+    height: 90vh;
+  }
+}
+.container-redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 ul {
   list-style: none;
 }
@@ -49,98 +69,63 @@ h1, h2, h3, h4 {
   margin-top: 20px;
 }
 
-.card-presupuesto {
-  color: #FFF;
-  background-color: darksalmon;
-  padding: 8px;
-}
-
-.lista-productos {
+.container-cards, .servicios {
   gap: 20px;
-  list-style: none;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.carousel-item img {
-  height: 600px;
+.card {
+  background-color: #000;
+  color: #FFF;
 }
 
-@media (min-width: 768px) {
-  .carousel-item img {
-    height: 90vh;
-  }
+.btn {
+  background-color: darksalmon;
+  border-color: darksalmon;
+}
+
+@media (min-width: 890px) {
   .lista-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .grid-algunos {
+  .container-cards, .servicios {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
   }
 }
-@media (min-width: 992px) {
-  .carousel-item {
-    height: 95vh;
-  }
-}
-
-#servicios{
-  margin-top: 10px;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-
-
-#padre-servicios{
+.grid-algunos {
   display: flex;
-  flex-direction: row;
-}	
-
-@media (max-width: 900px){
-  #padre-servicios{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-top: auto;
-  }
-}
-
-#entrada-p{
-  display: flex;
-  width: 1000px;
-  height: 830px;
-}
-
-#entrada-p img{
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: .8;
-  transition: .200 ease;
-}
-
-#entrada-p img:hover {
-  cursor: crosshair;
-  width: 300px;
-  opacity: 1;
-  filter: contrast(120%);
-}
-
-.iconos-index{
-  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.container-redes a{
+  gap: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  align-items: center;
 }
+
+.iconos-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (min-width: 890px) {
+  .grid-algunos {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /*# sourceMappingURL=styles.css.map */
